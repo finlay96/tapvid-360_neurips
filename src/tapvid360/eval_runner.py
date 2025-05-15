@@ -8,7 +8,7 @@ from src.tapvid360.metrics.tapvid360_metrics import compute_metrics, get_average
 from src.tapvid360.model.cotracker360 import CoTrackerThreeOfflineRotDelta
 
 DS_ROOT = ...  # Parent of the /dataset folder of tapvid360
-TRAINED_MODEL_DIR = ... # Path to the checkpoint_last.pth file
+TRAINED_MODEL_PATH = ... # Path to the checkpoint_last.pth file
 
 
 def _make_query_points_for_cotracker(gt_unit_vectors, perspective_points):
