@@ -7,10 +7,6 @@ from torchvision import transforms
 from src.tapvid360.conversions.mapper import Mappers
 
 
-# from track_everywhere.utils.rotations import rot
-# from track_everywhere.utils.spherical import Mappers
-
-
 def get_transform(img_size):
     return transforms.Compose([
         transforms.Resize(img_size),
