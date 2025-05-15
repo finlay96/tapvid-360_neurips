@@ -7,10 +7,8 @@ from src.tapvid360.dataloaders.eval_dataloader import UnitVectorVideoDataset
 from src.tapvid360.metrics.tapvid360_metrics import compute_metrics, get_average_metrics
 from src.tapvid360.model.cotracker360 import CoTrackerThreeOfflineRotDelta
 
-# DS_ROOT = ...  # Parent of the /dataset folder of tapvid360
-# TRAINED_MODEL_DIR = ... # Path to the checkpoint_last.pth file
-DS_ROOT = "/media/finlay/BigDaddyDrive/Datasets/tracking/track-everywhere/video_3d_dataset/TAP360-10k"
-TRAINED_MODEL_PATH = "/home/finlay/part_time_PHD_stuff/tracking/tapvid-360/checkpoint_last.pth"
+DS_ROOT = ...  # Parent of the /dataset folder of tapvid360
+TRAINED_MODEL_DIR = ... # Path to the checkpoint_last.pth file
 
 
 def _make_query_points_for_cotracker(gt_unit_vectors, perspective_points):
